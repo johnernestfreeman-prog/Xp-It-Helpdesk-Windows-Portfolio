@@ -1,0 +1,272 @@
+
+
+:root{
+  --navy:#000080;         /* classic Win98 titlebar blue */
+  --navy-dark:#00005a;
+  --grey:#c0c0c0;         /* classic UI grey */
+  --grey-light:#dcdcdc;
+  --grey-dark:#808080;
+  --panel:#ffffff;
+  --ink:#000000;
+  --ink-soft:#3c3c3c;
+  --green:#2f8a3e;
+  --green-dark:#1f6b2c;
+  --line:#808080;
+  --radius:0px;           /* square corners everywhere */
+}
+ 
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background-color: var(--white);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color:var(--ink);
+  font-family:"Tahoma","MS Sans Serif","Segoe UI",Arial,sans-serif;
+  font-size:13px;
+}
+a{color:inherit;}
+ 
+/* ---------- Title-bar nav (flat navy, beveled buttons) ---------- */
+.titlebar{
+  position:sticky; top:0; z-index:50;
+  background: var(--navy);
+  border-bottom:1px solid #000;
+  box-shadow:0 2px 4px rgba(0,0,0,0.3);
+}
+.titlebar-top{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:3px 6px;
+  max-width:1120px; margin:0 auto;
+}
+.titlebar-id{ display:flex; align-items:center; gap:8px; }
+.titlebar-icon{
+  width:16px;height:16px;
+  background: var(--grey);
+  border:1px solid #000;
+}
+.titlebar-name{
+  color:#fff; font-weight:700; font-size:13px;
+}
+.win-controls{ display:flex; gap:2px; }
+.win-btn{
+  width:18px;height:16px;border-radius:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:700;color:#000;
+  background: var(--grey);
+  border:1px solid #000;
+  border-top-color:#fff; border-left-color:#fff;
+}
+.win-btn.close{ background: var(--grey); color:#000; }
+ 
+.menubar{
+  background: var(--grey);
+  border-top:1px solid #fff;
+  border-bottom:1px solid var(--grey-dark);
+  display:flex; gap:2px;
+  padding:3px 6px;
+  max-width:1120px; margin:0 auto;
+  overflow-x:auto;
+}
+.menubar a{
+  text-decoration:none; color:var(--ink);
+  font-size:13px; padding:5px 12px;
+  border:1px solid transparent;
+}
+.menubar a:hover{
+  border:1px solid var(--grey-dark);
+  border-top-color:#fff; border-left-color:#fff;
+}
+.menubar a.cta{
+  margin-left:auto;
+  background: var(--grey);
+  color:#000; font-weight:600;
+  border:1px solid #000;
+  border-top-color:#fff; border-left-color:#fff;
+}
+ 
+main{ max-width:1120px; margin:0 auto; padding:0 20px; }
+ 
+/* ---------- Hero ---------- */
+.hero{
+  padding:48px 0 36px;
+  display:flex; align-items:center; gap:40px;
+  flex-wrap:wrap;
+   position: relative;   /* creates a containing block */
+  overflow: hidden;      /* clips anything that spills out */
+}
+.hero-avatar{
+  border-radius: 50%;
+  overflow: hidden; /*keeps image in a circle*/
+width: 133px;
+height: 132px;
+ 
+}
+
+
+.hero-bg-graphic {
+  position: absolute;
+  top: 10%;
+  right: -60px;
+  width: 320px;
+  height: auto;
+  z-index: -1;
+  opacity: 0.10;
+  pointer-events: none;
+}
+
+
+
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* prevents squishing/stretching */
+  border-radius: 50%;
+}
+
+
+.hero-bg-logo {           /* your Windows flag graphic */
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  z-index: -1;            /* sits behind text content */
+  opacity: 0.15;           /* optional: fade it so it reads as a watermark, not competing content */
+  pointer-events: none;    /* so it doesn't block clicks on text near it */
+}
+
+
+
+.hero-text{ flex:1; min-width:280px; }
+.eyebrow{
+  display:inline-block; font-size:12px; font-weight:700; letter-spacing:.04em;
+  text-transform:uppercase; color:#000;
+  background: var(--grey-light); border:1px solid var(--grey-dark);
+  padding:3px 10px; margin-bottom:12px;
+}
+h1{ margin:0 0 8px; font-size:34px; line-height:1.15; color:var(--navy); font-weight:700; }
+.tagline{ font-size:15px; color:var(--ink-soft); margin:0 0 20px; max-width:56ch; }
+.hero-actions{ display:flex; gap:10px; flex-wrap:wrap; }
+ 
+/* ---------- Buttons: raised bevel, pressed on click ---------- */
+.btn{
+  display:inline-block; padding:8px 18px;
+  font-size:13px; font-weight:600; text-decoration:none; cursor:pointer;
+  border:2px solid #000;
+}
+.btn-primary{
+  background: var(--grey);
+  border-top-color:#fff; border-left-color:#fff;
+  border-right-color:#404040; border-bottom-color:#404040;
+  color:#000;
+}
+.btn-primary:active{
+  border-top-color:#404040; border-left-color:#404040;
+  border-right-color:#fff; border-bottom-color:#fff;
+}
+.btn-secondary{
+  background: var(--grey-light);
+  border-top-color:#fff; border-left-color:#fff;
+  border-right-color:#808080; border-bottom-color:#808080;
+  color:#000;
+}
+ 
+/* ---------- Section frame ---------- */
+section{ padding:30px 0; }
+.section-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:16px; }
+.section-head h2{ margin:0; font-size:20px; color:var(--navy); font-weight:700; }
+.section-head .rule{ flex:1; height:1px; background:var(--grey-dark); }
+ 
+/* ---------- Window-style cards ---------- */
+.grid{ display:grid; gap:16px; }
+.grid-3{ grid-template-columns:repeat(3,1fr); }
+.grid-2{ grid-template-columns:repeat(2,1fr); }
+@media (max-width:820px){ .grid-3, .grid-2{ grid-template-columns:1fr; } }
+ 
+.card{
+  background:var(--panel);
+  border:2px solid #000;
+  border-top-color:#fff; border-left-color:#fff;
+  border-right-color:#404040; border-bottom-color:#404040;
+  overflow:hidden;
+}
+.card-bar{
+  background: var(--navy);
+  color:#fff; font-size:12px; font-weight:700;
+  padding:4px 8px; display:flex; align-items:center; gap:8px;
+}
+.card-bar .dot{ width:8px;height:8px; }
+.card-body{ padding:14px; }
+.card-body h3{ margin:0 0 6px; font-size:15px; color:var(--navy); font-weight:700; }
+.card-body p{ margin:0 0 12px; font-size:13px; color:var(--ink-soft); line-height:1.5; }
+.tag-row{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
+.tag{
+  font-size:11px; padding:2px 8px;
+  background: var(--grey-light); color:#000; border:1px solid var(--grey-dark);
+}
+.card-link{
+  font-size:13px; font-weight:600; color:var(--navy); text-decoration:none;
+}
+.card-link:hover{ text-decoration:underline; }
+ 
+.card.feature .card-bar{ background: var(--navy-dark); }
+ 
+/* ---------- Skills ---------- */
+.skill{
+  display:flex; align-items:flex-start; gap:10px;
+  background:var(--panel);
+  border:2px solid #000;
+  border-top-color:#fff; border-left-color:#fff;
+  border-right-color:#404040; border-bottom-color:#404040;
+  padding:12px;
+}
+.skill-icon{
+  width:28px;height:28px; flex-shrink:0;
+  background: var(--grey);
+  border:1px solid #000;
+}
+.skill h4{ margin:0 0 4px; font-size:13.5px; color:var(--navy); font-weight:700; }
+.skill p{ margin:0; font-size:12px; color:var(--ink-soft); line-height:1.45; }
+ 
+/* ---------- Contact ---------- */
+.contact-card{ max-width:640px; }
+label{ display:block; font-size:12.5px; font-weight:700; color:var(--navy); margin:12px 0 5px; }
+input, textarea{
+  width:100%; padding:6px 8px;
+  border:2px solid #000;
+  border-top-color:#404040; border-left-color:#404040;
+  border-right-color:#fff; border-bottom-color:#fff;
+  background:#fff; font-family:inherit; font-size:13px;
+}
+textarea{ min-height:100px; resize:vertical; }
+.socials{ display:flex; gap:8px; margin-top:6px; }
+.social{
+  width:30px;height:30px;
+  background: var(--grey);
+  border:1px solid #000;
+  border-top-color:#fff; border-left-color:#fff;
+  display:flex; align-items:center; justify-content:center; font-size:12px; color:#000;
+}
+ 
+/* ---------- Footer taskbar ---------- */
+footer{
+  margin-top:16px;
+  background: var(--grey);
+  border-top:2px solid #fff;
+  color:#000; font-size:12px;
+  padding:8px 20px; display:flex; justify-content:space-between; align-items:center;
+}
+.taskbar-start{
+  background: var(--grey);
+  color:#000; font-weight:700; font-size:12px; padding:4px 14px;
+  border:2px solid #000;
+  border-top-color:#fff; border-left-color:#fff;
+  border-right-color:#404040; border-bottom-color:#404040;
+}
+ 
+@media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+ 
