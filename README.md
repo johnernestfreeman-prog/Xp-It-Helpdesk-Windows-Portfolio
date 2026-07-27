@@ -46,7 +46,7 @@ A PowerShell script that runs a quick system health scan — checking disk space
 
 <div align="center">
 
-**[🖥️ View Live Site](/https://windows-xp-2001.netlify.app/)**
+**[🖥️ View Live Site](https://xp-it-helpdesk-windows-portfolio.netlify.app/)**
 
 </div>
 
