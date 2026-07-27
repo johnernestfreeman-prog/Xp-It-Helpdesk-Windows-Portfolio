@@ -7,7 +7,7 @@
 
 ## 📖 About Me
  
-I'm looking for a junior developer or IT help desk role where I can put real troubleshooting instincts to work. My recent projects lean full-stack — a support-ticket system with authentication and a real database behind it, and a 3D portfolio site built to show off frontend and animation chops without sacrificing load speed. I like tools that feel obvious to use, even when there's a lot happening underneath.
+I'm looking for a junior developer or IT help desk role where I can put real troubleshooting instincts to work. My recent projects lean full-stack  a support-ticket system with authentication and a real database behind it, and a 3D portfolio site built to show off frontend and animation chops without sacrificing load speed. I like tools that feel obvious to use, even when there's a lot happening underneath.
  
 ## 📌 Projects
  
@@ -19,12 +19,12 @@ A ticket-tracking app for logging, assigning, and resolving support requests, bu
 ### 🖥️ 3D Interactive Computer Room (Windows 95 Edition)
 `Three.js` `Vite` `GSAP`
  
-A fully modeled 3D office scene — click the monitor to zoom into a working Windows XP-style desktop with a resume viewer and app windows. Built as a showcase piece, not the main site, so it's worth exploring at your own pace.
+A fully modeled 3D office scene  click the monitor to zoom into a working Windows XP-style desktop with a resume viewer and app windows. Built as a showcase piece, not the main site, so it's worth exploring at your own pace.
  
 ### 🏐 Windows XP Desktop — Blobby Volley
 `JavaScript` `HTML` `CSS`
  
-A Windows XP-style desktop you can explore — complete with a working Minesweeper clone, Notepad, and a physics-based two-player volleyball game built from scratch in vanilla JS and Canvas.
+A Windows XP-style desktop you can explore  complete with a working Minesweeper clone, Notepad, and a physics-based two-player volleyball game built from scratch in vanilla JS and Canvas.
  
 ### 🩺 PC Health Checker
 `PowerShell` `Diagnostics`
