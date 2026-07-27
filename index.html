@@ -3,212 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Freeman  | Portfolio</title>
+    <title>John Freeman | Portfolio</title>
     <link rel="icon" href="/image/John-Freeman.png"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-<svg class="hero-bg-graphic" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <g transform="rotate(-12 200 150)">
-    <rect x="90"  y="70"  width="90" height="90" rx="6" fill="#E8543A"/>
-    <rect x="190" y="70"  width="90" height="90" rx="6" fill="#7CB93C"/>
-    <rect x="90"  y="170" width="90" height="90" rx="6" fill="#2E9BD6"/>
-    <rect x="190" y="170" width="90" height="90" rx="6" fill="#F5B700"/>
-  </g>
-</svg>
 
+<div class="page">
 
-<div class="title-bar"></div>
- <div class="titlebar-top">
-      <div class="titlebar-id">
-     
-        <img src="image/Windows.95.png" width="16">John Freeman — Portfolio.exe</div>
+  <!-- ================= BANNER ================= -->
+  <section class="banner">
+    <div class="banner-inner">
+      <div class="banner-text">
+        <span class="eyebrow">JUNIOR DEVELOPER · IT SUPPORT</span>
+        <h1>Hi, I'm <span class="accent">John</span></h1>
+        <p class="tagline">I build ticket-tracking systems, dashboards, and the occasional over-engineered 3D desktop  mostly so support tools stop feeling like an afterthought.</p>
+        <div class="banner-actions">
+          <a href="#projects" class="btn btn-outline">📁 Check out my projects</a>
+          <a href="Resume.pdf" class="btn btn-outline">📄 View my resume</a>
+          <a href="#contact" class="btn btn-outline">💬 Let's connect</a>
+        </div>
       </div>
-      <div class="win-controls">
-        <div class="win-btn">_</div>
-        <div class="win-btn">▢</div>
-        <div class="win-btn close">✕</div>
+      <div class="banner-avatar">
+        <img src="/image/John-Freeman.png" alt="John Freeman">
       </div>
     </div>
-    <nav class="menubar">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <a href="Resume.pdf" class="cta">Resume ↓</a>
-    </nav>
-  </div>
+  </section>
 
+  <!-- ================= THREE BOXES ================= -->
+  <section class="triple-row">
 
-  
-  <main>
- <section class="hero" id="top">
-  <div class="hero-avatar">
-    <img src="/image/John-Freeman.png" alt="John Freeman">
-  </div>
-  <div class="hero-text">
-        <span class="eyebrow">Junior Developer · IT Support</span>
-        <h1>John Freeman</h1>
-        <p class="tagline">I build ticket-tracking systems, dashboards, and the occasional over-engineered 3D desktop  mostly so support tools stop feeling like an afterthought.</p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    <div class="box">
+      <div class="box-head"><span class="box-icon">👤</span> ABOUT ME</div>
+      <div class="box-body">
+        <p>I'm an IT student who loves creating things that are both useful and functional.</p>
+        <p>I enjoy working on projects that challenge me and help me grow as a developer.</p>
+        <p class="focus-label">Currently focused on:</p>
+        <ul class="focus-list">
+          <li>→ Web Development</li>
+          <li>→ Help Desk &amp; IT Support</li>
+          <li>→ 3D / Interactive Experiences</li>
+          <li>→ System Automation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-head"><span class="box-icon">🛠️</span> TECH STACK</div>
+      <div class="box-body">
+        <div class="tech-grid">
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=html" width="32"><span>HTML</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=css" width="32"><span>CSS</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=js" width="32"><span>JavaScript</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=nodejs" width="32"><span>Node.js</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=express" width="32"><span>Express</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=mongodb" width="32"><span>MongoDB</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=threejs" width="32"><span>Three.js</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=git" width="32"><span>Git</span></div>
+          <div class="tech-item"><img src="https://skillicons.dev/icons?i=vscode" width="32"><span>VS Code</span></div>
         </div>
       </div>
-    </section>
- 
-    <section id="about">
-      <div class="section-head"><h2>About</h2><div class="rule"></div></div>
-      <div class="card">
-        <div class="card-bar"><span class="dot" style="background:#7CFC7C"></span>About me</div>
-        <div class="card-body">
-          <p style="max-width:70ch;">I'm looking for a junior developer or IT help desk role where I can put real troubleshooting instincts to work. My recent projects lean full-stack  a support-ticket system with authentication and a real database behind it, and a 3D portfolio site built to show off frontend and animation chops without sacrificing load speed. I like tools that feel obvious to use, even when there's a lot happening underneath.</p>
-        </div>
+    </div>
+
+    <div class="box">
+      <div class="box-head"><span class="box-icon">📊</span> Quick Facts</div>
+      <div class="box-body stats-body">
+        <h5>→ Full-stack: Node/Express, MongoDB, Three.js, vanilla JS</h5>
+        <h5>→ 4 shipped projects — ticket system, 3D portfolio, XP desktop, health checker</h5>
+        <h5>→ Actively seeking junior developer or IT help desk roles></h5>
+        <h5>→ Based in Virginia, open to remote</h5>
+
+
       </div>
-    </section>
- 
-    <section id="projects">
-      <div class="section-head"><h2>Projects</h2><div class="rule"></div></div>
-      <div class="grid grid-2">
- 
-        <div class="card">
-          <div class="card-bar"><span class="dot" style="background:#7CFC7C"></span>it-ticket-system</div>
-          <div class="card-body">
-            <div class="tag-row">
-              <span class="tag">Node / Express</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag">Full-Stack</span>
-            </div>
-            <h3>IT Help Desk Ticket Management System</h3>
-            <p>A ticket-tracking app for logging, assigning, and resolving support requests  built with an Express/MongoDB backend and a focus on the details real help desks care about: status flows, field validation, and accessible forms.</p>
-             <a class="card-link" href="https://github.com/johnernestfreeman-prog/it-ticket-system">View repository →</a>
-            <a class="card-link" href="https://it-ticket-system.netlify.app/">View Website</a>
-          </div>
+    </div>
+
+  </section>
+
+  <!-- ================= FEATURED PROJECTS ================= -->
+  <section id="projects" class="projects-section">
+    <div class="section-label">🚀 FEATURED PROJECTS</div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-head"><span class="dot" style="background:#7CFC7C"></span>Ticket System</div>
+        <p>A full-stack ticket management system for IT help desks.</p>
+        <div class="tag-row">
+          <span class="tag"><span class="tag-dot" style="background:#c084fc"></span>Node/Express</span>
+          <span class="tag"><span class="tag-dot" style="background:#4ade80"></span>MongoDB</span>
+          <span class="tag"><span class="tag-dot" style="background:#facc15"></span>JavaScript</span>
         </div>
- 
-        <div class="card feature">
-          <div class="card-bar"><span class="dot" style="background:#ffd27a"></span>Three.js Project</div>
-          <div class="card-body">
-            <div class="tag-row">
-              <span class="tag">Three.js</span>
-              <span class="tag">Vite</span>
-              <span class="tag">GSAP</span>
-            </div>
-            <h3>3D Interactive Computer Room (Windows 95 Edition)</h3>
-            <p>A fully modeled 3D office scene — click the monitor to zoom into a working Windows XP-style desktop with a resume viewer and app windows. Built as a showcase piece, not the main site, so it's worth exploring at your own pace.</p>
-            <a class="card-link" href="https://it-helpdesk-portfolio.netlify.app/">Launch the 3D experience →</a>
-          </div>
-        </div>
- 
-        <div class="card">
-          <div class="card-bar"><span class="dot" style="background:#7CFC7C"></span>Windows Xp Desktop</div>
-          <div class="card-body">
-            <div class="tag-row">
-              <span class="tag">JavaScript</span>
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-            </div>
-            <h3>Blobby Volley — Windows XP Edition</h3>
-            <p>A Windows XP-style desktop you can explore — complete with a working Minesweeper clone, Notepad, and a physics-based two-player volleyball game built from scratch in vanilla JS and Canvas.</p>
-            <a class="card-link" href="https://github.com/johnernestfreeman-prog/windows-xp">View repository →</a>
-            <a class="card-link" href="https://windows-xp-2001.netlify.app/">View Website</a>
-          </div>
-        </div>
- 
-        <div class="card">
-          <div class="card-bar"><span class="dot" style="background:#7CFC7C"></span>Pc Health Checker</div>
-          <div class="card-body">
-            <div class="tag-row">
-              <span class="tag">CSS</span>
-              <span class="tag">Design</span>
-            </div>
-            <h3>Windows-PC-Health-Checker</h3>
-            <p>A PowerShell script that runs a quick system health scan — checking disk space, RAM, uptime, internet connectivity, Windows Defender status, and OS version, then prints a clean summary report to the console.</p>
-            <a class="card-link" href="https://github.com/johnernestfreeman-prog/Windows-PC-Health-Checker">View repository →</a>
-          </div>
-        </div>
- 
+        <a class="project-link" href="https://github.com/johnernestfreeman-prog/it-ticket-system">Repo →</a>
+        <a class="project-link" href="https://it-ticket-system.netlify.app/">Site →</a>
       </div>
-    </section>
- 
-    <section id="skills">
-      <div class="section-head"><h2>Skills</h2><div class="rule"></div></div>
-      <div class="grid grid-3">
-        <div class="skill">
-          <div class="skill-icon"><img src="image/Front-end logo.png" width=27></div>
-          <div><h4>Frontend Development</h4><p>HTML, CSS, JavaScript, responsive layout, accessibility basics.</p></div>
+
+      <div class="project-card">
+        <div class="project-head"><span class="dot" style="background:#ffb037"></span>3D Portfolio</div>
+        <p>Interactive 3D office scene built with Three.js — click the monitor to zoom into a working XP desktop.</p>
+        <div class="tag-row">
+          <span class="tag"><span class="tag-dot" style="background:#f87171"></span>Three.js</span>
+          <span class="tag"><span class="tag-dot" style="background:#60a5fa"></span>Vite</span>
+          <span class="tag"><span class="tag-dot" style="background:#4ade80"></span>GSAP</span>
         </div>
-        <div class="skill">
-          <div class="skill-icon"><img src="image/Api.png"  width=27"></div>
-          <div><h4>Backend &amp; APIs</h4><p>Node.js, Express, REST endpoints, schema design with MongoDB.</p></div>
-        </div>
-        <div class="skill">
-          <div class="skill-icon"><img src="/image/Three.js_Icon.svg.webp" width="27"></div>
-          <div><h4>3D &amp; Animation</h4><p>Three.js scenes, GSAP-driven transitions, camera and interaction work.</p></div>
-        </div>
-        <div class="skill">
-          <div class="skill-icon"><img src="/image/Git.png" width="26"></div>
-          <div><h4>Version Control</h4><p>Git and GitHub workflows, branching, resolving merge conflicts.</p></div>
-        </div>
-        <div class="skill">
-          <div class="skill-icon"><img src="/image/error.png" width="26" height="26"></div>
-          <div><h4>Troubleshooting</h4><p>Diagnosing bugs across the stack — from CSS mismatches to schema gaps.</p></div>
-        </div>
-        <div class="skill">
-          <div class="skill-icon"><img src="/image/customer service.png" width="26" height="26"></div>
-          <div><h4>IT Support Fundamentals</h4><p>Ticketing workflows, user-facing communication, systematic debugging.</p></div>
-        </div>
+        <a class="project-link" href="https://it-helpdesk-portfolio.netlify.app/">Launch →</a>
       </div>
-    </section>
- 
-    <section id="contact">
-      <div class="section-head"><h2>Contact</h2><div class="rule"></div></div>
-      <div class="card contact-card">
-        <div class="card-bar"><span class="dot" style="background:#7CFC7C"></span>contact.form</div>
-        <div class="card-body">
-            <form action="https://formspree.io/f/mlgqodra" method="POST">
-          <div class="socials">
-       <a href="mailto:john.ernest.freeman@gmail.com" target="_blank" rel="noopener">
-       <img src="/image/gmail.jpg" width="20">
-      
-       <a href="https://www.linkedin.com/in/john-ernest-freeman-jr/" target="_blank" rel="noopener">
-        <img src="/image/linkedin.jpg" width=25 height="20">
-       </a>
 
-       <a href="https://github.com/johnernestfreeman-prog" target="_blank" rel="noopener">
-        <img src="/image/github.png" width="20">
+      <div class="project-card">
+        <div class="project-head"><span class="dot" style="background:#7CFC7C"></span>Windows XP Desktop</div>
+        <p>Explorable XP-style desktop with a Minesweeper clone, Notepad, and a physics-based volleyball game.</p>
+        <div class="tag-row">
+          <span class="tag"><span class="tag-dot" style="background:#facc15"></span>JavaScript</span>
+          <span class="tag"><span class="tag-dot" style="background:#f87171"></span>Canvas</span>
+        </div>
+        <a class="project-link" href="https://github.com/johnernestfreeman-prog/windows-xp">Repo →</a>
+        <a class="project-link" href="https://windows-xp-2001.netlify.app/">Site →</a>
+      </div>
 
-       </a>
+      <div class="project-card">
+        <div class="project-head"><span class="dot" style="background:#7CFC7C"></span>PC Health Checker</div>
+        <p>PowerShell script that scans disk, RAM, uptime, connectivity, and Defender status.</p>
+        <div class="tag-row">
+          <span class="tag"><span class="tag-dot" style="background:#60a5fa"></span>PowerShell</span>
+        </div>
+        <a class="project-link" href="https://github.com/johnernestfreeman-prog/Windows-PC-Health-Checker">Repo →</a>
+      </div>
 
-             </a>
+    </div>
+  </section>
 
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact-section">
+    <div class="box contact-box">
+      <div class="box-head"><span class="box-icon">✉️</span> CONTACT.FORM</div>
+      <div class="box-body">
+        <div class="socials">
+          <a href="mailto:john.ernest.freeman@gmail.com" target="_blank" rel="noopener"><img src="/image/gmail.jpg" width="20"></a>
+          <a href="https://www.linkedin.com/in/john-ernest-freeman-jr/" target="_blank" rel="noopener"><img src="/image/linkedin.jpg" width="25" height="20"></a>
+          <a href="https://github.com/johnernestfreeman-prog" target="_blank" rel="noopener"><img src="/image/github.png" width="20"></a>
+        </div>
+        <form action="https://formspree.io/f/mlgqodra" method="POST">
+          <div class="form-row">
+            <div>
+              <label for="name">Your Name</label>
+              <input id="name" type="text" placeholder="John Freeman" required>
+            </div>
+            <div>
+              <label for="email">Your Email</label>
+              <input id="email" type="email" placeholder="you@email.com" required>
+            </div>
           </div>
-          <label for="name">Your Name</label>
-          <input id="name" type="name" type="text" placeholder="John Freeman" required>
-          <label for="email">Your Email</label>
-          <input id="email" type="email"  type="email" placeholder="john.ernest.freeman@gmail.com" required>
           <label for="msg">Your Message</label>
-          <textarea id="msg"  name="message" placeholder="Let's talk about..." required></textarea>
-          <div style="margin-top:16px;">
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          
-        </div>
-            </form>
-        </div>
+          <textarea id="msg" name="message" placeholder="Let's talk about..." required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
       </div>
-    </section>
- 
-  </main>
- 
+    </div>
+  </section>
+
   <footer>
-    <span class="taskbar-start">Start</span>
-    <span>© 2026 John Freeman · Built with HTML &amp; CSS</span>
+    <p class="quote">"Always learning. Always building. Always improving."</p>
+    <p class="copyright">© 2026 John Freeman · Built with HTML &amp; CSS</p>
   </footer>
- 
 
-
-
+</div>
 
 </body>
 </html>
